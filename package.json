@@ -1,14 +1,18 @@
 {
-  "name": "research-graph-node-details",
+  "name": "personal-page-prototypes",
   "version": "1.0.0",
-  "description": "Research Graph Node Details - Material Design Interface",
-  "main": "index.html",
+  "description": "Personal Page Prototypes for Research Graph Application - Starred Papers, Folder Structure, and AI Recommendations",
+  "main": "personal-page-prototype-1.html",
   "scripts": {
     "start": "python -m http.server 8000",
     "build": "echo 'Static build complete'",
     "dev": "python -m http.server 8000"
   },
-  "keywords": ["research", "papers", "graph", "academic"],
+  "keywords": ["research", "papers", "personal-library", "ai-recommendations", "academic"],
   "author": "Kathryn Harper",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/hw6.git"
+  }
 }
