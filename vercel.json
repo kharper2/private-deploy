@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "prototype-1-material-design.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/prototype-1-material-design.html"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "research-graph-node-details",
+  "version": "1.0.0",
+  "description": "Research Graph Node Details - Material Design Interface",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'Static build complete'",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": ["research", "papers", "graph", "academic"],
+  "author": "Kathryn Harper",
+  "license": "MIT"
+}

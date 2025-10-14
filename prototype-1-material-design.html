@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Graph - Node Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .header {
+            background: #1976d2;
+            color: white;
+            padding: 16px 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .node-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+
+        .node-header {
+            background: #f8f9fa;
+            padding: 20px 24px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .node-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #1976d2;
+            margin-bottom: 8px;
+        }
+
+        .node-meta {
+            display: flex;
+            gap: 16px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .node-content {
+            padding: 24px;
+        }
+
+        .summary-section {
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .summary-text {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .link-card {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 16px;
+            transition: all 0.2s;
+        }
+
+        .link-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .link-title {
+            font-weight: 500;
+            color: #1976d2;
+            margin-bottom: 8px;
+        }
+
+        .link-type {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .link-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #1976d2;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1565c0;
+        }
+
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #333;
+            border: 1px solid #e0e0e0;
+        }
+
+        .btn-secondary:hover {
+            background: #eeeeee;
+        }
+
+        .metrics {
+            display: flex;
+            gap: 24px;
+            margin-top: 16px;
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 24px;
+            font-weight: 500;
+            color: #1976d2;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Research Graph Explorer</h1>
+    </div>
+
+    <div class="container">
+        <div class="node-card">
+            <div class="node-header">
+                <div class="node-title">Graph Neural Networks for Recommendation Systems</div>
+                <div class="node-meta">
+                    <span>Authors: Zhang et al.</span>
+                    <span>Year: 2023</span>
+                    <span>Venue: ICML</span>
+                    <span>Citations: 127</span>
+                </div>
+            </div>
+
+            <div class="node-content">
+                <div class="summary-section">
+                    <div class="section-title">Abstract</div>
+                    <div class="summary-text">
+                        This paper presents a novel approach to recommendation systems using graph neural networks. 
+                        We introduce a multi-layer GNN architecture that captures both local and global user-item 
+                        interactions, achieving state-of-the-art performance on multiple datasets. Our method 
+                        addresses the cold-start problem through innovative embedding techniques and demonstrates 
+                        significant improvements in recommendation accuracy.
+                    </div>
+                </div>
+
+                <div class="summary-section">
+                    <div class="section-title">Key Contributions</div>
+                    <div class="summary-text">
+                        • Novel GNN architecture for recommendation systems<br>
+                        • Solution to cold-start problem<br>
+                        • State-of-the-art performance on benchmark datasets<br>
+                        • Open-source implementation available
+                    </div>
+                </div>
+
+                <div class="summary-section">
+                    <div class="section-title">Related Papers</div>
+                    <div class="links-grid">
+                        <div class="link-card">
+                            <div class="link-type">Cited By</div>
+                            <div class="link-title">Deep Learning for Collaborative Filtering</div>
+                            <div class="link-description">Extends our work with attention mechanisms for better user modeling</div>
+                        </div>
+                        <div class="link-card">
+                            <div class="link-type">References</div>
+                            <div class="link-title">Graph Convolutional Networks</div>
+                            <div class="link-description">Foundational work on GCNs that inspired our architecture</div>
+                        </div>
+                        <div class="link-card">
+                            <div class="link-type">Similar</div>
+                            <div class="link-title">Neural Collaborative Filtering</div>
+                            <div class="link-description">Alternative approach using neural networks for recommendations</div>
+                        </div>
+                        <div class="link-card">
+                            <div class="link-type">Implementation</div>
+                            <div class="link-title">GitHub Repository</div>
+                            <div class="link-description">Complete implementation with examples and tutorials</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metrics">
+                    <div class="metric">
+                        <div class="metric-value">4.2</div>
+                        <div class="metric-label">Impact Score</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">87%</div>
+                        <div class="metric-label">Reproducibility</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">High</div>
+                        <div class="metric-label">Implementation Ready</div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button class="btn btn-primary">
+                        <span class="material-icons" style="font-size: 16px; margin-right: 4px;">download</span>
+                        Export Citations
+                    </button>
+                    <button class="btn btn-secondary">
+                        <span class="material-icons" style="font-size: 16px; margin-right: 4px;">share</span>
+                        Share Paper
+                    </button>
+                    <button class="btn btn-secondary">
+                        <span class="material-icons" style="font-size: 16px; margin-right: 4px;">bookmark</span>
+                        Save to Library
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add some interactivity
+        document.querySelectorAll('.link-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const title = this.querySelector('.link-title').textContent;
+                alert(`Opening: ${title}`);
+            });
+        });
+
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const action = this.textContent.trim();
+                alert(`Action: ${action}`);
+            });
+        });
+    </script>
+</body>
+</html>
